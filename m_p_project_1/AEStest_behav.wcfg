@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AEStest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AEStest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="380000fs"></ZoomStartTime>
+      <ZoomEndTime time="518880001fs"></ZoomEndTime>
+      <Cursor1Time time="390000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="207"></NameColumnWidth>
+      <ValueColumnWidth column_width="287"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/AEStest/uut/x1/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/inputdata" type="array">
+      <obj_property name="ElementShortName">inputdata[127:0]</obj_property>
+      <obj_property name="ObjectShortName">inputdata[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/key" type="array">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/encodedtext" type="array">
+      <obj_property name="ElementShortName">encodedtext[127:0]</obj_property>
+      <obj_property name="ObjectShortName">encodedtext[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/decodedtext" type="array">
+      <obj_property name="ElementShortName">decodedtext[127:0]</obj_property>
+      <obj_property name="ObjectShortName">decodedtext[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/i" type="array">
+      <obj_property name="ElementShortName">i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/j" type="array">
+      <obj_property name="ElementShortName">j[3:0]</obj_property>
+      <obj_property name="ObjectShortName">j[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/dataout" type="array">
+      <obj_property name="ElementShortName">dataout[127:0]</obj_property>
+      <obj_property name="ObjectShortName">dataout[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/roundoutput" type="array">
+      <obj_property name="ElementShortName">roundoutput[0:9][127:0]</obj_property>
+      <obj_property name="ObjectShortName">roundoutput[0:9][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/decryptoutput" type="array">
+      <obj_property name="ElementShortName">decryptoutput[0:9][127:0]</obj_property>
+      <obj_property name="ObjectShortName">decryptoutput[0:9][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/keyoutput" type="array">
+      <obj_property name="ElementShortName">keyoutput[0:9][127:0]</obj_property>
+      <obj_property name="ObjectShortName">keyoutput[0:9][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/rpresentencrypt" type="array">
+      <obj_property name="ElementShortName">rpresentencrypt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">rpresentencrypt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/rnxtencrypt" type="array">
+      <obj_property name="ElementShortName">rnxtencrypt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">rnxtencrypt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/rpresentdecrypt" type="array">
+      <obj_property name="ElementShortName">rpresentdecrypt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">rpresentdecrypt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/keypresentencrypt" type="array">
+      <obj_property name="ElementShortName">keypresentencrypt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keypresentencrypt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/keynextencrypt" type="array">
+      <obj_property name="ElementShortName">keynextencrypt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keynextencrypt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/keydecrypt" type="array">
+      <obj_property name="ElementShortName">keydecrypt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">keydecrypt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AEStest/uut/x1/k" type="array">
+      <obj_property name="ElementShortName">k[127:0]</obj_property>
+      <obj_property name="ObjectShortName">k[127:0]</obj_property>
+   </wvobject>
+</wave_config>

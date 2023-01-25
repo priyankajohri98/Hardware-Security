@@ -1,0 +1,15 @@
+odule dec(clk,rc,data,keyin,roundoutput);
+input clk;
+input [3:0]rc;
+input [127:0]data;
+input [127:0]keyin;
+output [127:0]roundoutput;
+
+wire [127:0] sb,sr,mixcolumn;
+
+Sboxd t1(sb,roundoutput);
+shiftrowdec t2(sr,sb);
+mixcolumnd t3(mixcolumn,sr);
+assign mixcolumn= keyin^data;
+
+endmodule

@@ -1,0 +1,27 @@
+
+module scox(data,sc);
+
+input [127:0] data;
+output [127:0] sc;
+
+     roundscox z0( .a(data[127:120]),.c(sc[127:120]) );
+     roundscox z1( .a(data[119:112]),.c(sc[119:112]) );
+     roundscox z2( .a(data[111:104]),.c(sc[111:104]) );
+     roundscox z3( .a(data[103:96]),.c(sc[103:96]) );
+     
+     roundscox z4( .a(data[95:88]),.c(sc[95:88]) );
+     roundscox z5( .a(data[87:80]),.c(sc[87:80]) );
+     roundscox z6( .a(data[79:72]),.c(sc[79:72]) );
+     roundscox z7( .a(data[71:64]),.c(sc[71:64]) );
+     
+     roundscox z8( .a(data[63:56]),.c(sc[63:56]) );
+     roundscox z9( .a(data[55:48]),.c(sc[55:48]) );
+     roundscox z10(.a(data[47:40]),.c(sc[47:40]) );
+     roundscox z11(.a(data[39:32]),.c(sc[39:32]) );
+     
+     roundscox z12(.a(data[31:24]),.c(sc[31:24]) );
+     roundscox z13(.a(data[23:16]),.c(sc[23:16]) );
+     roundscox z14(.a(data[15:8]),.c(sc[15:8]) );
+     roundscox z16(.a(data[7:0]),.c(sc[7:0]) );
+	  
+endmodule

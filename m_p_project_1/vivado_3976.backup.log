@@ -1,0 +1,337 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 21 16:10:22 2022
+# Process ID: 3976
+# Current directory: C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13464 C:\Users\Dell\OneDrive\Desktop\m_p_AES\m_p_project_1\m_p_project_1.xpr
+# Log file: C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/vivado.log
+# Journal file: C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 794.285 ; gain = 164.719
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Mon Feb 21 16:11:00 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xa7a12tcsg325-1Q
+INFO: [Netlist 29-17] Analyzing 506 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'aestopmodule' is not ideal for floorplanning, since the cellview 'aes' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xa7a12tcsg325-1Q
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1033.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1169.941 ; gain = 372.188
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AEStest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AEStest_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 24f4871d67c14d53b7dfdd2baefd43f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AEStest_behav xil_defaultlib.AEStest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AEStest_behav -key {Behavioral:sim_1:Functional:AEStest} -tclbatch {AEStest.tcl} -view {C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/AEStest_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/AEStest_behav.wcfg
+source AEStest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 390 ns : File "C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v" Line 38
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AEStest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1650.648 ; gain = 86.418
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 200 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 200 ps
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 200 us
+$finish called at time : 390 ns : File "C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v" Line 38
+save_wave_config {C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/AEStest_behav.wcfg}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xa7a12tcsg325-1Q
+Top: aestopmodule
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/Sboxd.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decrypt.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decryptlastround.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/encryptSbox.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/first9rounds.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/keygeneration.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/lastround.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptabel14.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable11.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable13.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable9.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumn.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumndecrypt.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sbox.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sboxinverse.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrow.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrowd.v'
+ERROR: [Runs 36-287] File does not exist or is not accessible:'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aestopmodule.v'
+ERROR: [Synth 8-1769] cannot open verilog file C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/Sboxd.v
+Failed to read verilog 'C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/Sboxd.v'
+0 Infos, 0 Warnings, 0 Critical Warnings and 21 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xa7a12tcsg325-1Q
+Top: aestopmodule
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1990.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aestopmodule' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aestopmodule.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aes' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v:3]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v:24]
+INFO: [Synth 8-6157] synthesizing module 'first9rounds' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/first9rounds.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Keygeneration' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/keygeneration.v:1]
+INFO: [Synth 8-6157] synthesizing module 'roundsbox' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'roundsbox' (1#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Keygeneration' (2#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/keygeneration.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sbox' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/encryptSbox.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox' (3#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/encryptSbox.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shiftrow' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrow.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrow' (4#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrow.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumn' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumn.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumn' (5#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumn.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'first9rounds' (6#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/first9rounds.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lastround' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/lastround.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lastround' (7#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/lastround.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decrypt' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decrypt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sboxd' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/Sboxd.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sboxinverse' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sboxinverse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sboxinverse' (8#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sboxinverse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Sboxd' (9#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/Sboxd.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shiftrowdec' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrowd.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrowdec' (10#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrowd.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumnd' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumndecrypt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable14' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptabel14.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable14' (11#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptabel14.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable13' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable13.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable13' (12#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable13.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable11' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable11.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable11' (13#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable11.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable9' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable9.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable9' (14#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable9.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumnd' (15#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumndecrypt.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decrypt' (16#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decrypt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decryptlastround' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decryptlastround.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decryptlastround' (17#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decryptlastround.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aes' (18#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'aestopmodule' (19#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aestopmodule.v:1]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port clock
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[3]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[2]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[1]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[0]
+WARNING: [Synth 8-3331] design decrypt has unconnected port clock
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[3]
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[2]
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[1]
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[0]
+WARNING: [Synth 8-3331] design lastround has unconnected port clock
+WARNING: [Synth 8-3331] design first9rounds has unconnected port clock
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[127]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[126]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[125]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[124]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[123]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[122]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[121]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[120]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[119]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[118]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[117]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[116]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[115]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[114]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[113]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[112]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[111]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[110]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[109]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[108]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[107]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[106]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[105]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[104]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[103]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[102]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[101]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[100]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[99]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[98]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[97]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[96]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[95]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[94]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[93]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[92]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[91]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[90]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[89]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[88]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[87]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[86]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[85]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[84]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[83]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[82]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[81]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[80]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[79]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[78]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[77]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[76]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[75]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[74]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[73]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[72]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[71]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[70]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[69]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[68]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[67]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[66]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[65]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[64]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[63]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[62]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[61]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[60]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[59]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[58]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[57]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[56]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[55]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[54]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[53]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[52]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[51]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[50]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[49]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[48]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[47]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[46]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[45]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[44]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[43]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[42]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[41]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[40]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1990.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1990.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1990.520 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2083.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2083.379 ; gain = 92.859
+42 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2083.379 ; gain = 92.859
+report_methodology -name ultrafast_methodology_1 -checks {XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 HPDR-1 RRRS-1 RROR-1 ROAS-1 RMOR-1 RMIR-1 RFTL-1 RFRC-1 RFRA-1 RFFI-1 RFFH-1 RFCF-1 RCCL-1 RCBG-1 RAMP-1 RAMF-1 RAMD-1 RAKN-1}
+Command: report_methodology -name ultrafast_methodology_1 -checks {XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 HPDR-1 RRRS-1 RROR-1 ROAS-1 RMOR-1 RMIR-1 RFTL-1 RFRC-1 RFRA-1 RFFI-1 RFFH-1 RFCF-1 RCCL-1 RCBG-1 RAMP-1 RAMF-1 RAMD-1 RAKN-1}
+INFO: [Timing 38-253] The multi-corner and the min_max analysis have been enable for the timing DRC
+INFO: [DRC 23-133] Running Methodology with 2 threads
+report_methodology completed successfully
+launch_runs impl_1 -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2175.797 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+[Mon Feb 21 17:05:10 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.runs/impl_1/runme.log
+current_design synth_1
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 506 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'aestopmodule' is not ideal for floorplanning, since the cellview 'aes' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.311 . Memory (MB): peak = 2175.984 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.312 . Memory (MB): peak = 2175.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2175.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 21 17:10:45 2022...

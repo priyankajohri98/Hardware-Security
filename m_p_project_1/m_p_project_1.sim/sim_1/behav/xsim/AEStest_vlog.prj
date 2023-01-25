@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../v files/Sboxd.v" \
+"../../../../../v files/aescipher.v" \
+"../../../../../v files/aestopmodule.v" \
+"../../../../../v files/decrypt.v" \
+"../../../../../v files/decryptlastround.v" \
+"../../../../../v files/encryptSbox.v" \
+"../../../../../v files/first9rounds.v" \
+"../../../../../v files/keygeneration.v" \
+"../../../../../v files/lastround.v" \
+"../../../../../v files/m_lookuptabel14.v" \
+"../../../../../v files/m_lookuptable11.v" \
+"../../../../../v files/m_lookuptable13.v" \
+"../../../../../v files/m_lookuptable9.v" \
+"../../../../../v files/mixcolumn.v" \
+"../../../../../v files/mixcolumndecrypt.v" \
+"../../../../../v files/sbox.v" \
+"../../../../../v files/sboxinverse.v" \
+"../../../../../v files/shiftrow.v" \
+"../../../../../v files/shiftrowd.v" \
+"../../../../../test/aestop.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,761 @@
+
+*** Running vivado
+    with args -log aestopmodule.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source aestopmodule.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source aestopmodule.tcl -notrace
+Command: synth_design -top aestopmodule -part xa7a12tcsg325-1Q
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a12t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a12t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25096 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.918 ; gain = 99.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aestopmodule' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aestopmodule.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aes' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v:3]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v:24]
+INFO: [Synth 8-6157] synthesizing module 'first9rounds' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/first9rounds.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Keygeneration' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/keygeneration.v:1]
+INFO: [Synth 8-6157] synthesizing module 'roundsbox' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'roundsbox' (1#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sbox.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Keygeneration' (2#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/keygeneration.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sbox' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/encryptSbox.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox' (3#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/encryptSbox.v:2]
+INFO: [Synth 8-6157] synthesizing module 'shiftrow' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrow.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrow' (4#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrow.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumn' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumn.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumn' (5#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumn.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'first9rounds' (6#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/first9rounds.v:1]
+INFO: [Synth 8-6157] synthesizing module 'lastround' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/lastround.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lastround' (7#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/lastround.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decrypt' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decrypt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sboxd' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/Sboxd.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sboxinverse' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sboxinverse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sboxinverse' (8#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/sboxinverse.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Sboxd' (9#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/Sboxd.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shiftrowdec' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrowd.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrowdec' (10#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/shiftrowd.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumnd' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumndecrypt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable14' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptabel14.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable14' (11#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptabel14.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable13' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable13.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable13' (12#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable13.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable11' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable11.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable11' (13#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable11.v:3]
+INFO: [Synth 8-6157] synthesizing module 'm_lookuptable9' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable9.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'm_lookuptable9' (14#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/m_lookuptable9.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumnd' (15#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/mixcolumndecrypt.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decrypt' (16#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decrypt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decryptlastround' [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decryptlastround.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decryptlastround' (17#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/decryptlastround.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'aes' (18#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aescipher.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'aestopmodule' (19#1) [C:/Users/Dell/OneDrive/Desktop/m_p_AES/v files/aestopmodule.v:1]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port clock
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[3]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[2]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[1]
+WARNING: [Synth 8-3331] design decryptlastround has unconnected port count[0]
+WARNING: [Synth 8-3331] design decrypt has unconnected port clock
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[3]
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[2]
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[1]
+WARNING: [Synth 8-3331] design decrypt has unconnected port count[0]
+WARNING: [Synth 8-3331] design lastround has unconnected port clock
+WARNING: [Synth 8-3331] design first9rounds has unconnected port clock
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[127]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[126]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[125]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[124]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[123]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[122]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[121]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[120]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[119]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[118]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[117]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[116]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[115]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[114]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[113]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[112]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[111]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[110]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[109]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[108]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[107]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[106]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[105]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[104]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[103]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[102]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[101]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[100]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[99]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[98]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[97]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[96]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[95]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[94]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[93]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[92]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[91]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[90]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[89]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[88]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[87]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[86]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[85]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[84]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[83]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[82]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[81]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[80]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[79]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[78]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[77]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[76]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[75]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[74]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[73]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[72]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[71]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[70]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[69]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[68]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[67]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[66]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[65]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[64]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[63]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[62]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[61]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[60]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[59]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[58]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[57]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[56]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[55]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[54]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[53]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[52]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[51]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[50]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[49]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[48]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[47]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[46]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[45]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[44]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[43]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[42]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[41]
+WARNING: [Synth 8-3331] design aes has unconnected port inputdata[40]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.461 ; gain = 157.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.461 ; gain = 157.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a12tcsg325-1Q
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.461 ; gain = 157.918
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a12tcsg325-1Q
+INFO: [Synth 8-5545] ROM "keyoutput_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-6430] The Block RAM roundoutput_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 515.125 ; gain = 183.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input    128 Bit         XORs := 5     
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input     32 Bit         XORs := 6     
+	   4 Input      8 Bit         XORs := 16    
+	   2 Input      1 Bit         XORs := 59    
+	   3 Input      1 Bit         XORs := 61    
+	   5 Input      1 Bit         XORs := 27    
+	   4 Input      1 Bit         XORs := 46    
+	   6 Input      1 Bit         XORs := 8     
++---Registers : 
+	              128 Bit    Registers := 10    
+	                4 Bit    Registers := 3     
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Keygeneration 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 3     
+Module mixcolumn 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 59    
+	   3 Input      1 Bit         XORs := 61    
+	   5 Input      1 Bit         XORs := 27    
+	   4 Input      1 Bit         XORs := 46    
+	   6 Input      1 Bit         XORs := 8     
+Module first9rounds 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module lastround 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module mixcolumnd 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      8 Bit         XORs := 16    
+Module decrypt 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module decryptlastround 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+Module aes 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 10    
+	                4 Bit    Registers := 3     
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "keyoutput_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "keyoutput_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+RAM Pipeline Warning: Read Address Register Found For RAM roundoutput_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM roundoutput_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-6430] The Block RAM roundoutput_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM roundoutput_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][69] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][70] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][71] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][72] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][104] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][73] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][105] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][74] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][106] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][75] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][107] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][76] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][108] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][77] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][109] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][78] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][110] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][79] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][80] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][112] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][81] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][113] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][82] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][114] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][83] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][115] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][84] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][116] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][85] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][117] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][88] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][89] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][90] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][91] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][92] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][93] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][94] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][95] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][97] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][98] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][99] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x1/\keyoutput_reg[0][101] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|roundsbox        | c          | 256x8         | LUT            | 
+|sboxinverse      | c          | 256x8         | LUT            | 
+|m_lookuptable14  | c          | 256x8         | LUT            | 
+|m_lookuptable13  | c          | 256x8         | LUT            | 
+|m_lookuptable11  | c          | 256x8         | LUT            | 
+|m_lookuptable9   | c          | 256x8         | LUT            | 
+|first9rounds     | f0/b4/c    | 256x8         | LUT            | 
+|first9rounds     | f0/b3/c    | 256x8         | LUT            | 
+|first9rounds     | f0/b2/c    | 256x8         | LUT            | 
+|first9rounds     | f0/b1/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z15/c   | 256x8         | LUT            | 
+|first9rounds     | f1/z14/c   | 256x8         | LUT            | 
+|first9rounds     | f1/z13/c   | 256x8         | LUT            | 
+|first9rounds     | f1/z12/c   | 256x8         | LUT            | 
+|first9rounds     | f1/z11/c   | 256x8         | LUT            | 
+|first9rounds     | f1/z10/c   | 256x8         | LUT            | 
+|first9rounds     | f1/z9/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z8/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z7/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z6/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z5/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z4/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z3/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z2/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z1/c    | 256x8         | LUT            | 
+|first9rounds     | f1/z0/c    | 256x8         | LUT            | 
+|lastround        | t0/b4/c    | 256x8         | LUT            | 
+|lastround        | t0/b3/c    | 256x8         | LUT            | 
+|lastround        | t0/b2/c    | 256x8         | LUT            | 
+|lastround        | t0/b1/c    | 256x8         | LUT            | 
+|lastround        | t1/z15/c   | 256x8         | LUT            | 
+|lastround        | t1/z14/c   | 256x8         | LUT            | 
+|lastround        | t1/z13/c   | 256x8         | LUT            | 
+|lastround        | t1/z12/c   | 256x8         | LUT            | 
+|lastround        | t1/z11/c   | 256x8         | LUT            | 
+|lastround        | t1/z10/c   | 256x8         | LUT            | 
+|lastround        | t1/z9/c    | 256x8         | LUT            | 
+|lastround        | t1/z8/c    | 256x8         | LUT            | 
+|lastround        | t1/z7/c    | 256x8         | LUT            | 
+|lastround        | t1/z6/c    | 256x8         | LUT            | 
+|lastround        | t1/z5/c    | 256x8         | LUT            | 
+|lastround        | t1/z4/c    | 256x8         | LUT            | 
+|lastround        | t1/z3/c    | 256x8         | LUT            | 
+|lastround        | t1/z2/c    | 256x8         | LUT            | 
+|lastround        | t1/z1/c    | 256x8         | LUT            | 
+|lastround        | t1/z0/c    | 256x8         | LUT            | 
+|Sboxd            | q16/c      | 256x8         | LUT            | 
+|Sboxd            | q14/c      | 256x8         | LUT            | 
+|Sboxd            | q13/c      | 256x8         | LUT            | 
+|Sboxd            | q12/c      | 256x8         | LUT            | 
+|Sboxd            | q11/c      | 256x8         | LUT            | 
+|Sboxd            | q10/c      | 256x8         | LUT            | 
+|Sboxd            | q9/c       | 256x8         | LUT            | 
+|Sboxd            | q8/c       | 256x8         | LUT            | 
+|Sboxd            | q7/c       | 256x8         | LUT            | 
+|Sboxd            | q6/c       | 256x8         | LUT            | 
+|Sboxd            | q5/c       | 256x8         | LUT            | 
+|Sboxd            | q4/c       | 256x8         | LUT            | 
+|Sboxd            | q3/c       | 256x8         | LUT            | 
+|Sboxd            | q2/c       | 256x8         | LUT            | 
+|Sboxd            | q1/c       | 256x8         | LUT            | 
+|Sboxd            | q0/c       | 256x8         | LUT            | 
+|mixcolumnd       | k0/c       | 256x8         | LUT            | 
+|mixcolumnd       | k1/c       | 256x8         | LUT            | 
+|mixcolumnd       | k2/c       | 256x8         | LUT            | 
+|mixcolumnd       | k3/c       | 256x8         | LUT            | 
+|mixcolumnd       | k4/c       | 256x8         | LUT            | 
+|mixcolumnd       | k5/c       | 256x8         | LUT            | 
+|mixcolumnd       | k6/c       | 256x8         | LUT            | 
+|mixcolumnd       | k7/c       | 256x8         | LUT            | 
+|mixcolumnd       | k8/c       | 256x8         | LUT            | 
+|mixcolumnd       | k9/c       | 256x8         | LUT            | 
+|mixcolumnd       | k10/c      | 256x8         | LUT            | 
+|mixcolumnd       | k11/c      | 256x8         | LUT            | 
+|mixcolumnd       | k12/c      | 256x8         | LUT            | 
+|mixcolumnd       | k13/c      | 256x8         | LUT            | 
+|mixcolumnd       | k14/c      | 256x8         | LUT            | 
+|mixcolumnd       | k15/c      | 256x8         | LUT            | 
+|mixcolumnd       | l0/c       | 256x8         | LUT            | 
+|mixcolumnd       | l1/c       | 256x8         | LUT            | 
+|mixcolumnd       | l2/c       | 256x8         | LUT            | 
+|mixcolumnd       | l3/c       | 256x8         | LUT            | 
+|mixcolumnd       | l4/c       | 256x8         | LUT            | 
+|mixcolumnd       | l5/c       | 256x8         | LUT            | 
+|mixcolumnd       | l6/c       | 256x8         | LUT            | 
+|mixcolumnd       | l7/c       | 256x8         | LUT            | 
+|mixcolumnd       | l8/c       | 256x8         | LUT            | 
+|mixcolumnd       | l9/c       | 256x8         | LUT            | 
+|mixcolumnd       | l10/c      | 256x8         | LUT            | 
+|mixcolumnd       | l11/c      | 256x8         | LUT            | 
+|mixcolumnd       | l12/c      | 256x8         | LUT            | 
+|mixcolumnd       | l13/c      | 256x8         | LUT            | 
+|mixcolumnd       | l14/c      | 256x8         | LUT            | 
+|mixcolumnd       | l15/c      | 256x8         | LUT            | 
+|mixcolumnd       | m0/c       | 256x8         | LUT            | 
+|mixcolumnd       | m1/c       | 256x8         | LUT            | 
+|mixcolumnd       | m2/c       | 256x8         | LUT            | 
+|mixcolumnd       | m3/c       | 256x8         | LUT            | 
+|mixcolumnd       | m4/c       | 256x8         | LUT            | 
+|mixcolumnd       | m6/c       | 256x8         | LUT            | 
+|mixcolumnd       | m8/c       | 256x8         | LUT            | 
+|mixcolumnd       | m9/c       | 256x8         | LUT            | 
+|mixcolumnd       | m10/c      | 256x8         | LUT            | 
+|mixcolumnd       | m11/c      | 256x8         | LUT            | 
+|mixcolumnd       | m12/c      | 256x8         | LUT            | 
+|mixcolumnd       | m13/c      | 256x8         | LUT            | 
+|mixcolumnd       | m14/c      | 256x8         | LUT            | 
+|mixcolumnd       | m15/c      | 256x8         | LUT            | 
+|mixcolumnd       | n0/c       | 256x8         | LUT            | 
+|mixcolumnd       | n1/c       | 256x8         | LUT            | 
+|mixcolumnd       | n2/c       | 256x8         | LUT            | 
+|mixcolumnd       | n3/c       | 256x8         | LUT            | 
+|mixcolumnd       | n4/c       | 256x8         | LUT            | 
+|mixcolumnd       | n5/c       | 256x8         | LUT            | 
+|mixcolumnd       | n6/c       | 256x8         | LUT            | 
+|mixcolumnd       | n7/c       | 256x8         | LUT            | 
+|mixcolumnd       | n8/c       | 256x8         | LUT            | 
+|mixcolumnd       | n9/c       | 256x8         | LUT            | 
+|mixcolumnd       | n10/c      | 256x8         | LUT            | 
+|mixcolumnd       | n11/c      | 256x8         | LUT            | 
+|mixcolumnd       | n12/c      | 256x8         | LUT            | 
+|mixcolumnd       | n13/c      | 256x8         | LUT            | 
+|mixcolumnd       | n14/c      | 256x8         | LUT            | 
+|mixcolumnd       | n15/c      | 256x8         | LUT            | 
+|decryptlastround | f1/q16/c   | 256x8         | LUT            | 
+|decryptlastround | f1/q14/c   | 256x8         | LUT            | 
+|decryptlastround | f1/q13/c   | 256x8         | LUT            | 
+|decryptlastround | f1/q12/c   | 256x8         | LUT            | 
+|decryptlastround | f1/q11/c   | 256x8         | LUT            | 
+|decryptlastround | f1/q10/c   | 256x8         | LUT            | 
+|decryptlastround | f1/q9/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q8/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q7/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q6/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q5/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q4/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q3/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q2/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q1/c    | 256x8         | LUT            | 
+|decryptlastround | f1/q0/c    | 256x8         | LUT            | 
++-----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|aes:        | roundoutput_reg | 16 x 128(READ_FIRST)   | W |   | 16 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance x1/i_1/roundoutput_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance x1/i_1/roundoutput_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|aes:        | roundoutput_reg | 16 x 128(READ_FIRST)   | W |   | 16 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance x1/roundoutput_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance x1/roundoutput_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT1     |     1|
+|3     |LUT2     |    57|
+|4     |LUT3     |    42|
+|5     |LUT4     |    34|
+|6     |LUT5     |   209|
+|7     |LUT6     |  1080|
+|8     |MUXF7    |   353|
+|9     |MUXF8    |   151|
+|10    |RAMB36E1 |     2|
+|11    |FDRE     |  1163|
+|12    |IBUF     |     1|
+|13    |OBUF     |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+--------------+------+
+|      |Instance    |Module        |Cells |
++------+------------+--------------+------+
+|1     |top         |              |  3102|
+|2     |  x1        |aes           |  3088|
+|3     |    round1  |first9rounds  |   423|
+|4     |      f0    |Keygeneration |    63|
+|5     |        b2  |roundsbox_14  |    21|
+|6     |        b3  |roundsbox_15  |    21|
+|7     |        b4  |roundsbox_16  |    21|
+|8     |      f1    |Sbox          |   360|
+|9     |        z1  |roundsbox     |    24|
+|10    |        z10 |roundsbox_0   |    24|
+|11    |        z11 |roundsbox_1   |    24|
+|12    |        z12 |roundsbox_2   |    24|
+|13    |        z13 |roundsbox_3   |    24|
+|14    |        z14 |roundsbox_4   |    24|
+|15    |        z15 |roundsbox_5   |    24|
+|16    |        z2  |roundsbox_6   |    24|
+|17    |        z3  |roundsbox_7   |    24|
+|18    |        z4  |roundsbox_8   |    24|
+|19    |        z5  |roundsbox_9   |    24|
+|20    |        z6  |roundsbox_10  |    24|
+|21    |        z7  |roundsbox_11  |    24|
+|22    |        z8  |roundsbox_12  |    24|
+|23    |        z9  |roundsbox_13  |    24|
++------+------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 749.270 ; gain = 417.727
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 537 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 749.270 ; gain = 417.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 749.270 ; gain = 417.727
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 506 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'aestopmodule' is not ideal for floorplanning, since the cellview 'aes' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 749.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+173 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 749.270 ; gain = 430.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 749.270 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dell/OneDrive/Desktop/m_p_AES/m_p_project_1/m_p_project_1.runs/synth_1/aestopmodule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aestopmodule_utilization_synth.rpt -pb aestopmodule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 21 19:28:30 2022...
